@@ -1,0 +1,13 @@
+with st.container(key="Viewer"+str(Durchlauf),border=1):
+    st.subheader("Termin:")
+    st.write(f"Am {Datum} um 19:00 Uhr")
+    
+    st.subheader("Restaurant:")
+    st.write(f"{Rest}")
+    st.write(f"{Adresse}")
+    st.write(f"{Webseite}")
+    
+    Liste.append([Durchlauf,Datum,Rest,Adresse,Webseite])
+
+    if st.button("Dort gewesen",key="botto"+str(Durchlauf)):
+        print ("Hallo")
