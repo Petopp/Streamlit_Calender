@@ -3,6 +3,31 @@ import pandas as pd
 from datetime import datetime, timedelta
 import os
     
+# DEV hide
+st.markdown(
+    r"""
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {visibility: hidden;}
+    
+    header { visibility: hidden; }
+        .css-18e3th9 { visibility: hidden; }
+        .css-1d391kg { padding-top: 0px; }
+
+
+        
+    [data-testid="stBottom"] > div {
+        background: transparent;
+        }
+    
+    }
+   
+
+    </style>
+    
+    """, unsafe_allow_html=True
+)
 
 if "data" not in st.session_state:
 

@@ -3,6 +3,33 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
+# DEV hide
+st.markdown(
+    r"""
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {visibility: hidden;}
+    
+    header { visibility: hidden; }
+        .css-18e3th9 { visibility: hidden; }
+        .css-1d391kg { padding-top: 0px; }
+
+
+        
+    [data-testid="stBottom"] > div {
+        background: transparent;
+        }
+    
+    }
+   
+
+    </style>
+    
+    """, unsafe_allow_html=True
+)
+
+
 if 'dataCSV' in st.session_state:
     del st.session_state["dataCSV"]
 

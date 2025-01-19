@@ -4,6 +4,32 @@ from datetime import datetime, timedelta
 import random
 import os
 
+# DEV hide
+st.markdown(
+    r"""
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {visibility: hidden;}
+    
+    header { visibility: hidden; }
+        .css-18e3th9 { visibility: hidden; }
+        .css-1d391kg { padding-top: 0px; }
+
+
+        
+    [data-testid="stBottom"] > div {
+        background: transparent;
+        }
+    
+    }
+   
+
+    </style>
+    
+    """, unsafe_allow_html=True
+)
+
 
 # Daten löschen aus Temp
 if 'dataCSV' in st.session_state:
